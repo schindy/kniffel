@@ -1,150 +1,130 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-<div id='left';>
-Würfel
+<div id="left">
+WÃ¼rfel
 </div>
-<div id='right';>
-<table border 1>
+<div id="right">
+<table border="1">
 	<tr>
     	<th>Spieler</th>
-    	<th>Spieler 1</th>
-    	<th>Spieler 2</th>
-  		<th>Spieler 3</th>
-    	<th>Spieler 4</th>
+    	#{list items:spielername, as:'name' }
+    	<th>${name}</th>
+    	#{/list}
   	</tr>
   	<tr>
     	<td>1er</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>2er</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>3er</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>4er</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>5er</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>6er</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Gesamt</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
-    	<td>Bonus bei >63</td>
+    	<td>Bonus bei &gt;63</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Gesamt oberer Teil</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Dreierpasch (alle W&uuml;rfel)</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Viererpasch (alle W&uuml;rfel)</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Full-House (25 Punkte)</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Kleine Strasse (30 Punkte)</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Grosse Strasse (40 Punkte)</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Kniffel (50 Punkte)</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Chance (alle W&uuml;rfel)</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Gesamt unterer Teil</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Gesamt oberer Teil</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
   		<tr>
     	<td>Endsumme</td>
+    	#{list items:spielername, as:'name' }
     	<td></td>
-    	<td></td>
-    	<td></td>
-    	<td></td>
+    	#{/list}
   	</tr>
 </table>
 </div>
