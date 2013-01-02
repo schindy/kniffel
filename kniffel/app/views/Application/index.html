@@ -1,0 +1,26 @@
+#{extends 'main.html' /}
+#{set title:'Start' /}
+
+<form action="@{Application.index()}" method="GET">
+  <p>
+    <select name="anzahl">
+      <option value="1">1 Spieler</option>
+      <option value="2">2 Spieler</option>
+      <option value="3">3 Spieler</option>
+      <option value="4">4 Spieler</option>
+      <option value="5">5 Spieler</option>
+      <option value="6">6 Spieler</option>
+    </select>
+  </p>
+  <input type="submit" value="Spieler setzen" />
+</form>
+<h1>${anzahl  ?: 'guest'}</h1>	
+#{list items:1..anzahl, as:'i'}
+   	 <form action="@{Application.kniffel()}" method="GET">
+  		<p>Name des Spieler ${i}:<br><input name="spielername" type="text" size="30" maxlength="30"></p>
+#{/list}
+#{if anzahl == i}
+	<input type="submit" value="Spiel Starten!" />
+ #{/if}
+ </form>
+ 

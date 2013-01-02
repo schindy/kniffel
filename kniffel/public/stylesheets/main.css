@@ -1,0 +1,26 @@
+body{
+width: 900px;
+}
+
+#header{
+background: blue;
+}
+
+h1{
+	color: red;
+}
+
+#content{
+}
+
+#left{
+float: left;
+background: green;
+width: 300px;
+}
+
+#right{
+float: left;
+background: yellow;
+width: 600px;
+}
