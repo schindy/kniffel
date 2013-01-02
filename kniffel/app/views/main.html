@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	<link href="@{'/public/stylesheets/reset.css'}" type="text/css" rel="stylesheet" />
     	<link href="@{'/public/stylesheets/main.css'}" type="text/css" rel="stylesheet" />
         <title>#{get 'title' /}</title>
     </head>
     <body>
-    <div id='header'>
-    	<h1>Kniffel</h1>
-    </div>
-    <div id='content';>
-    	#{doLayout /}
+    <div id="container">
+	    <div id='header'>
+	    	<h1>Kniffel</h1>
+	    </div>
+	    <div id='content';>
+	    	#{doLayout /}
+	    </div>
     </div>
     </body>
 </html>

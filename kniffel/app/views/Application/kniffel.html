@@ -2,12 +2,25 @@
 #{set title:'Home' /}
 
 <div id="left">
-Würfel
+<h2>Würfel</h2>
+
+<table border="1" width="100%">
+<tr>
+	<td>Name</td>
+	<td>Punkte</td>
+</tr>
+#{list items:spielername, as:'name' }
+<tr>
+	<td>${name}</td>
+	<td>0</td>
+</tr>
+#{/list}
+</table>
 </div>
 <div id="right">
-<table border="1">
+<table border="1" width="100%">
 	<tr>
-    	<th>Spieler</th>
+    	<th width="95%">Spieler</th>
     	#{list items:spielername, as:'name' }
     	<th>${name}</th>
     	#{/list}

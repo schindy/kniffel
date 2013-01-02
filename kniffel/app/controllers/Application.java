@@ -1,11 +1,8 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
+import java.util.List;
 
-import java.util.*;
-
-import models.*;
+import play.mvc.Controller;
 
 public class Application extends Controller
 {
@@ -23,6 +20,11 @@ public class Application extends Controller
 
   public static void kniffel(List<String> spielername)
   {
+	  if (spielername == null) {
+		  redirect("/");
+		  return;
+	  }
+
     for(String s : spielername)
     {
       System.out.println (s);
