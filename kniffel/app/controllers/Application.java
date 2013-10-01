@@ -7,7 +7,7 @@ import play.mvc.Controller;
 public class Application extends Controller
 {
 
-//test
+//test2
   public static void index(int anzahl)
   {
     if (anzahl == 0)
